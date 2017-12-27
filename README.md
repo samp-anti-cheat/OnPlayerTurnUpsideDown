@@ -24,7 +24,7 @@ sampctl package install samp-anti-cheat/OnPlayerTurnUpsideDown
 Include in your code and begin using the library:
 
 ```pawn
-#include <OnPlayerTurnUpsideDown>
+#include <optud>
 ```
 
 ## Testing
