@@ -18,13 +18,13 @@
 Simply install to your project:
 
 ```bash
-sampctl package install Owner/library
+sampctl package install samp-anti-cheat/OnPlayerTurnUpsideDown
 ```
 
 Include in your code and begin using the library:
 
 ```pawn
-#include <library>
+#include <OnPlayerTurnUpsideDown>
 ```
 
 ## Testing
