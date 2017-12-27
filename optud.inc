@@ -7,6 +7,9 @@ OnPlayerTurnUpsideDown.
 #endif
 #define _OPTUD_included
 
+#include <a_samp>
+#include <Pawn.RakNet>
+
 #if ! defined PAWNRAKNET_INC_
     #error You must have Pawn.Raknet include in order to use this one.
 #endif
@@ -33,7 +36,7 @@ public OnIncomingPacket(playerid, packetid, BitStream:bs)
             {
                 ARQ_callback[playerid] = gettime();
                 OnAntiCheatTurnUpsideDown(playerid, ARQ_angle);
-            }    
+            }
         }
     }
     #if defined ARQ_OnIncomingPacket
