@@ -30,7 +30,7 @@ public OnIncomingPacket(playerid, packetid, BitStream:bs)
             
         new const Float:ARQ_angle = atan2(2 * ((ARQ_onFootSync[PR_quaternion][2] * ARQ_onFootSync[PR_quaternion][3]) + (ARQ_onFootSync[PR_quaternion][0] * ARQ_onFootSync[PR_quaternion][1])), (ARQ_onFootSync[PR_quaternion][0] * ARQ_onFootSync[PR_quaternion][0]) - (ARQ_onFootSync[PR_quaternion][1] * ARQ_onFootSync[PR_quaternion][1]) - (ARQ_onFootSync[PR_quaternion][2] * ARQ_onFootSync[PR_quaternion][2]) + (ARQ_onFootSync[PR_quaternion][3] * ARQ_onFootSync[PR_quaternion][3]));
             
-        if(GetPlayerSpecialAction(playerid) != SPECIAL_ACTION_ENTER_VEHICLE) 
+        if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_NONE) 
         {
             if(ARQ_angle > 85.0 || ARQ_angle < -85.0)
             {
