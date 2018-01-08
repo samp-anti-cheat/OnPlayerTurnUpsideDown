@@ -41,6 +41,7 @@ public OnIncomingPacket(playerid, packetid, BitStream:bs)
                 }
             }
         }
+        BS_ResetReadPointer(bs);
     }
     #if defined ARQ_OnIncomingPacket
         return ARQ_OnIncomingPacket(playerid, packetid, bs);
