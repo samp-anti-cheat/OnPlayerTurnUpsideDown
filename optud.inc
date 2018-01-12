@@ -46,7 +46,7 @@ public OnIncomingPacket(playerid, packetid, BitStream:bs)
                 if(gettime() > ARQ_callback[playerid])
                 {
                     ARQ_callback[playerid] = gettime();
-                    OnAntiCheatTurnUpsideDown(playerid, ARQ_angle);
+                    OnAntiCheatTurnUpsideDown(playerid, OPTUD_angle);
                 }
             }
         }
